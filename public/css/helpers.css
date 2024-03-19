@@ -1,3 +1,9 @@
+@media (max-width: 451px) {
+	.hidden-lt-xs {
+		display: none !important;
+	}
+}
+
 @media (max-width: 651px) {
 	.hidden-lt-sm {
 		display: none !important;

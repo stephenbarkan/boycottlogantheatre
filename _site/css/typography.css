@@ -17,7 +17,7 @@
 	--heading-xl-size: 46px;
 	--heading-lg-size: 40px;
 	--heading-base-size: 26px;
-	--callout-size: 23px;
+	--callout-size: 22px;
 	--body-xl-size: 19px;
 	--body-lg-size: 19px;
 	--body-base-size: 19px;
@@ -78,9 +78,10 @@
 	font-family: var(--ff-display);
 	font-weight: 400;
 	font-size: var(--callout-size);
-	line-height: 130%;
+	line-height: 110%;
 	letter-spacing: 0.01em;
 	color: var(--display-secondary);
+	text-wrap: balance;
 }
 
 .body-xl {
@@ -150,5 +151,9 @@
 		font-weight: 400;
 		line-height: 130%;
 		color: var(--display-secondary);
+	}
+
+	.callout {
+		line-height: 130%;
 	}
 }

@@ -18,9 +18,10 @@ header {
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
+	padding-inline-start: 1.5rem;
+	padding-inline-end: 1.5rem;
 
 	@media (min-width: 652px) {
-		padding-inline-end: 1.5rem;
 		justify-content: flex-end;
 	}
 }
