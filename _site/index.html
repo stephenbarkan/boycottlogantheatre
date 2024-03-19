@@ -648,6 +648,15 @@ footer {
 		gap: 2.5rem;
 		text-align: left;
 	}
+
+	& h2 a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 nav {
@@ -1163,7 +1172,9 @@ header {
     </section>
 </main>
 <footer>
-    <h2 class="heading-base">#boycottlogantheatre</h2>
+    <h2 class="heading-base">
+        <a href="#">#boycottlogantheatre</a>
+    </h2>
     <nav>
     <div class="nav-inner-links">
         <a x-on:click="open = false" href="#whats-the-story" class="navigation-link">The story</a>
