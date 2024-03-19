@@ -1,0 +1,23 @@
+<header x-on:click.outside="open = false">
+    <div class="hidden-lt-lg lg-nav">{% include "components/nav.njk" %}</div>
+    <div class="hidden-gt-lg nav-button">
+        <button x-on:click="open = !open">
+            <svg x-show="!open" fill="var(--display-tertiary)" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.0625 8.99939H20.0625V10.9994H-0.0625V8.99939Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.0625 16.4994H20.0625V18.4994H-0.0625V16.4994Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.0625 1.49951H20.0625V3.49951H-0.0625V1.49951Z"/>
+            </svg>
+            <svg x-show="open" fill="var(--display-tertiary)" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.56466 1.30225L18.8495 17.5871L17.4353 19.0013L1.15045 2.71646L2.56466 1.30225Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4353 1.30225L1.15045 17.5871L2.56466 19.0013L18.8495 2.71646L17.4353 1.30225Z"/>
+            </svg>
+            <span class="callout hidden-sm">Menu</span>
+        </button>
+    </div>
+    <div class="header-right hidden-gt-lg">{% include "components/day-counter.njk" %}</div>
+    <div
+        x-show="open"
+        x-transition.opacity.duration.250ms
+        class="header-nav">{% include "components/nav.njk" %}
+    </div>
+</header>

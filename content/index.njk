@@ -1,0 +1,80 @@
+---
+layout: layouts/base.njk
+---
+
+{% include "components/header.njk" %}
+<main>
+    <hgroup>
+        <h1 class="heading-xl">Boycott the Logan Theatre!</h1>
+        <p class="body-lg">We demand M. Fishman & Co. drop the unjust eviction against our neighbor, Manal Farhan.</p>
+        <div class="hidden-lt-lg">{% include "components/day-counter.njk" %}</div>
+    </hgroup>
+    {# <section id="header-images" class="content-section">
+        <div class="header-images">
+            <img src="/img/header01.jpg" alt="">
+            <img src="/img/header02.jpg" alt="">
+            <img src="/img/header03.jpg" alt="">
+        </div>
+    </section> #}
+    <section id="whats-the-story" class="content-section">
+        <h2 class="heading-base">The story</h2>
+        <div class="paragraphs body-base">
+            <p>In an act of anti-Palestinian racism, owner of The Logan Theatre and long-time enemy of the neighborhood, landlord Mark Fishman, filed an eviction against his tenant for flying a Palestinian flag from her window over Milwaukee Avenue.</p>
+        </div>
+    </section>
+    <section id="who-we-are" class="content-section">
+        <h2 class="heading-base">Who we are</h2>
+        <div class="paragraphs body-base">
+            <p>We are an autonomous group of Logan Square neighbors who vehemently oppose Fishman’s discriminatory retaliation against our Palestinian neighbor. We’re organizing to have Manal’s eviction rescinded.</p>
+        </div>
+    </section>
+    <section id="our-tactics" class="content-section">
+        <h2 class="heading-base">Our tactics</h2>
+        <div class="paragraphs body-base">
+            <p>We are an autonomous group of Logan Square neighbors who vehemently oppose Fishman’s discriminatory retaliation against our Palestinian neighbor. We’re organizing to have Manal’s eviction rescinded.</p>
+        </div>
+    </section>
+    <section id="most-recently" class="content-section">
+        <h2 class="heading-base">Most recently,</h2>
+        <div class="paragraphs body-base">
+            <p>
+                On Monday, March 11, nearly 200 community members assembled outside of The Logan Theater to protest the screening of a Zionist propaganda film hosted by Mark Fishman.
+            </p>
+            <p>
+                A few days prior, our group learned that Fishman planned to use the neighborhood theater to screen the propaganda piece, #NOVA, in an effort to solicit donations for the IOF and garner support for the Zionist occupation’s genocide in Gaza, where over 40,000 people have been murdered and millions displaced from their homes. We immediately called on Chicagoans across the city to join us in disrupting the viewing. It was not lost on us that Fishman callously chose the first day of Ramadan to gather Zionists in support of the murderous IOF while they, in the same moment, were massacring Palestinian families in Rafah.
+            </p>
+            <p>
+                Mark Fishman is indeed an enemy of the Logan Square community and of Palestinians everywhere! Support of any M. Fishman business fuels the genocide in Gaza as well as displacement — of Palestinians and other marginalized people — here in Chicago. Not only do we demand M Fishman & Co. drop the unjust eviction against our neighbor, Manal, but we join the billions around the world calling for an immediate end to the US/Israel genocide on Gaza and Zionists out of Palestine.
+            </p>
+            <p>
+                 We believe the March 11th action was a testament to the power of the people to expose injustice and demand accountability for our communities. We encourage our neighbors and all Chicagoans to continue to organize and take action to expose M. Fishman for who he is: a genocide supporter, a gentrifier, and an oppressor of our beautiful neighborhood.
+            </p>
+        </div>
+    </section>
+    <section id="call-to-action">
+        <h2 class="heading-lg">Boycott!</h2>
+        <p class="body-lg">In recognition of the power of our local choices, we call on our neighbors to join us in the ongoing boycott of The Logan Theatre.</p>
+    </section>
+    {# <section id="call-to-action-image" class="content-section">
+        <img src="/img/calltoaction.jpg" alt="">
+    </section> #}
+    <section id="fishman-in-the-media" class="content-section">
+        <h2 class="heading-base">Fishman in the media</h2>
+        <div class="paragraphs body-base">
+            <p>
+                Don’t take our word for it – Mark Fishman has a well-documented past of being a menace to the Logan Square community, prioritizing his own financial interests at the expense of neighbors new and old.
+            </p>
+        </div>
+        <ul class="article-cards">
+            {% from "components/article-card.njk" import articlecard %}
+
+            {% for article in articles %}
+                <li>{{ articlecard(title=article.title, link=article.link, source=article.source, date=article.date) }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
+<footer>
+    <h2 class="heading-base">#boycottlogantheatre</h2>
+    {% include "components/nav.njk" %}
+</footer>

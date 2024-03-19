@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boycott The Logan Theatre</title>
+        <meta name="description" content="We demand M. Fishman &amp; Co.drop the unjust eviction against our neighbor, Manal Farhan.">
+        <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Boycott The Logan Theatre">
+        <link rel="alternate" href="/feed/feed.json" type="application/json" title="Boycott The Logan Theatre">
+        
+        <style>
+            html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-smooth: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* colors */
+:root {
+	--background-primary: #fdfcfc;
+	--background-secondary: #faf9f9;
+	--background-hover: #e2e1df;
+
+	--border-primary: #a6a4a2;
+	--border-secondary: #d8d7d4;
+
+	--display-primary: #000000;
+	--display-secondary: #46403d;
+	--display-tertiary: #76726d;
+	--display-quaternary: #a6a4a2;
+	--display-link: #2f2fba;
+
+	--ff-display: "Arial Narrow";
+	--ff-body: "Arial";
+}
+
+/* type sizes */
+:root {
+	--heading-xl-size: 46px;
+	--heading-lg-size: 40px;
+	--heading-base-size: 26px;
+	--callout-size: 23px;
+	--body-lg-size: 19px;
+	--body-base-size: 19px;
+	--body-sm-size: 17px;
+	--nav-link-size: 18px;
+	--metadata-size: 11.5px;
+
+	@media (min-width: 652px) {
+		--heading-xl-size: 80px;
+		--heading-lg-size: 70px;
+		--heading-base-size: 30px;
+		--callout-size: 32px;
+		--body-lg-size: 26px;
+		--body-base-size: 23px;
+		--body-sm-size: 21px;
+		--nav-link-size: 20px;
+		--metadata-size: 14px;
+	}
+
+	@media (min-width: 1260px) {
+		--heading-xl-size: 88px;
+		--body-lg-size: 29px;
+		--callout-size: 38px;
+	}
+}
+
+/* borders */
+:root {
+	--border-width: 1.5px;
+
+	@media (min-width: 652px) {
+		--border-width: 2px;
+	}
+}
+
+/* spaces */
+:root {
+	--body-padding-inline: 1rem;
+	--section-spacing: 4rem;
+	--section-scroll-padding: 7rem;
+	--content-section-gap: 1rem;
+	--indent: 1rem;
+
+	@media (min-width: 652px) {
+		--body-padding-inline: 2rem;
+		--section-spacing: 6rem;
+		--section-scroll-padding: 9rem;
+		--content-section-gap: 1.5rem;
+		--indent: 1.5rem;
+	}
+	@media (min-width: 1260px) {
+		--body-padding-inline: 2rem;
+		--section-spacing: 9rem;
+		--indent: 0rem;
+		--content-section-gap: 2.5rem;
+	}
+}
+
+/* containers */
+:root {
+	--container-max-width: 500px;
+
+	@media (min-width: 652px) {
+		--container-max-width: 700px;
+	}
+
+	@media (min-width: 1260px) {
+		/* --container-max-width: 1075px; */
+		--container-max-width: 1332px;
+	}
+}
+@media (max-width: 651px) {
+	.hidden-lt-sm {
+		display: none !important;
+	}
+}
+
+@media (min-width: 1260px) {
+	.hidden-gt-lg {
+		display: none !important;
+	}
+}
+@media (max-width: 1259px) {
+	.hidden-lt-lg {
+		display: none !important;
+	}
+}
+.heading-xl {
+	font-family: var(--ff-display);
+	font-weight: 700;
+	font-size: var(--heading-xl-size);
+	line-height: 100%;
+	letter-spacing: 0.005em;
+	color: var(--display-primary);
+	text-transform: uppercase;
+}
+.heading-lg {
+	font-family: var(--ff-display);
+	font-weight: 700;
+	font-size: var(--heading-lg-size);
+	line-height: 100%;
+	letter-spacing: 0.005em;
+	color: var(--display-primary);
+	text-transform: uppercase;
+}
+.heading-base {
+	font-family: var(--ff-display);
+	font-weight: 700;
+	font-size: var(--heading-base-size);
+	line-height: 110%;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--display-primary);
+}
+
+.callout {
+	font-family: var(--ff-display);
+	font-weight: 400;
+	font-size: var(--callout-size);
+	line-height: 130%;
+	letter-spacing: 0.01em;
+	color: var(--display-secondary);
+}
+
+.body-lg {
+	font-family: var(--ff-body);
+	font-weight: 400;
+	font-size: var(--body-lg-size);
+	line-height: 150%;
+	color: var(--display-secondary);
+}
+
+.body-base {
+	font-family: var(--ff-body);
+	font-weight: 400;
+	font-size: var(--body-base-size);
+	line-height: 150%;
+	color: var(--display-secondary);
+}
+
+.body-sm {
+	font-family: var(--ff-body);
+	font-weight: 400;
+	font-size: var(--body-sm-size);
+	line-height: 160%;
+	letter-spacing: 0.005em;
+}
+
+.navigation-link {
+	font-family: var(--ff-body);
+	font-weight: 700;
+	font-size: var(--nav-link-size);
+	line-height: 130%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--display-tertiary);
+}
+
+.metadata {
+	font-family: var(--ff-body);
+	font-weight: 700;
+	font-size: var(--metadata-size);
+	line-height: 130%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--display-tertiary);
+}
+
+@media (min-width: 652px) {
+	.body-base {
+		line-height: 160%;
+	}
+	.body-sm {
+		line-height: 170%;
+	}
+}
+html {
+	scroll-behavior: smooth;
+	background: var(--background-primary);
+}
+
+body {
+	overflow-x: hidden;
+	&.nav-open {
+		overflow: hidden;
+	}
+}
+
+main {
+	position: relative;
+	padding-block-start: 3rem;
+	padding-block-end: 4rem;
+	padding-inline-start: var(--body-padding-inline);
+	padding-inline-end: var(--body-padding-inline);
+	max-width: var(--container-max-width);
+	margin: 0 auto;
+
+	@media (min-width: 652px) {
+		padding-block-start: 5.5rem;
+	}
+
+	@media (min-width: 1260px) {
+		padding-block-start: 8rem;
+		padding-block-end: 10rem;
+		display: grid;
+		column-gap: var(--content-section-gap);
+		max-width: var(--container-max-width);
+		grid-template-columns: 2fr repeat(12, 1fr) 2fr;
+	}
+}
+
+hgroup {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	@media (min-width: 652px) {
+		text-align: center;
+		gap: 1.5rem;
+	}
+
+	@media (min-width: 1260px) {
+		/* grid-column: 5 / -1; */
+		grid-column: 1 / 9;
+		text-align: left;
+	}
+
+	div:has(.day-counter) {
+		border: var(--border-width) var(--border-primary) solid;
+		padding: 2rem;
+		max-width: 320px;
+		position: absolute;
+		/* left: -0.5rem; */
+		right: 2rem;
+		transform: translateY(2rem) rotate(4deg);
+		background-color: var(--background-secondary);
+	}
+}
+
+.header-images {
+	block-size: 190px;
+	inline-size: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	gap: 0.75rem;
+
+	& img {
+		height: 100%;
+		object-fit: contain;
+	}
+
+	@media (min-width: 652px) {
+		block-size: 440px;
+	}
+}
+
+#call-to-action-image {
+	block-size: 230px;
+	inline-size: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	gap: 0.75rem;
+
+	& img {
+		height: 100%;
+		object-fit: contain;
+	}
+
+	@media (min-width: 652px) {
+		block-size: 462px;
+	}
+}
+
+section {
+	margin-block-start: var(--section-spacing);
+	scroll-margin-block: var(--section-scroll-padding);
+}
+
+.content-section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--content-section-gap);
+
+	& .paragraphs {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2em;
+		padding-inline-start: var(--indent);
+	}
+
+	@media (min-width: 1260px) {
+		display: grid;
+		grid-column: 2 / 14;
+		grid-template-columns: subgrid;
+		text-align: left;
+		align-items: first baseline;
+
+		& h2 {
+			grid-column: span 4 / span 4;
+		}
+
+		& .paragraphs {
+			grid-column: span 8 / span 8;
+		}
+	}
+}
+
+#call-to-action {
+	padding-block-start: 1.75rem;
+	padding-block-end: 1.75rem;
+	padding-inline-start: 0.75rem;
+	padding-inline-end: 0.75rem;
+	border: var(--border-width) var(--border-primary) solid;
+	display: flex;
+	flex-direction: column;
+	gap: var(--content-section-gap);
+	text-align: center;
+
+	@media (min-width: 652px) {
+		padding-block-start: 2.5rem;
+		padding-block-end: 2.5rem;
+		padding-inline-start: 1.75rem;
+		padding-inline-end: 1.75rem;
+	}
+
+	@media (min-width: 1260px) {
+		grid-column: 1 / -1;
+		max-width: 800px;
+		margin-inline: auto;
+		padding-block-start: 5rem;
+		padding-block-end: 5rem;
+		padding-inline-start: 3.5rem;
+		padding-inline-end: 3.5rem;
+		gap: 3.5rem;
+		background-color: var(--background-secondary);
+		transform: rotate(-2deg);
+	}
+}
+
+#fishman-in-the-media {
+	& h2 {
+		grid-column: 1 / -1;
+		text-align: center;
+	}
+
+	& .paragraphs {
+		grid-column: 3 / 11;
+		text-align: center;
+	}
+}
+
+.article-cards {
+	display: flex;
+	flex-direction: column;
+	gap: var(--content-section-gap);
+	padding-inline-start: var(--indent);
+	margin-block-start: 1.5rem;
+
+	@media (min-width: 1260px) {
+		display: grid;
+		grid-template-columns: subgrid;
+		grid-column: 1 / -1;
+		gap: 1.5rem;
+
+		& li {
+			grid-column: span 6 / span 6;
+		}
+	}
+}
+
+footer {
+	border-top: var(--border-width) var(--border-primary) solid;
+	background-color: var(--background-secondary);
+	padding-inline-start: var(--body-padding-inline);
+	padding-inline-end: var(--body-padding-inline);
+	padding-block-start: 2rem;
+	padding-block-end: 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	@media (min-width: 1260px) {
+		padding-block-start: 2.5rem;
+		padding-block-end: 2.5rem;
+		gap: 2.5rem;
+		text-align: left;
+	}
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+
+	& a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@media (min-width: 1260px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.nav-inner-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+
+	@media (min-width: 1260px) {
+		gap: 1.25rem;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.nav-dot {
+	color: var(--display-quaternary);
+}
+header {
+	border-bottom: var(--border-width) var(--border-primary) solid;
+	background: var(--background-secondary);
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+	@media (min-width: 1260px) {
+		position: static;
+		border: unset;
+		background-color: unset;
+	}
+}
+
+.header-right {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+
+	@media (min-width: 652px) {
+		padding-inline-end: 1.5rem;
+		justify-content: flex-end;
+	}
+}
+
+.nav-button {
+	padding: 0.25rem;
+	border-right: var(--border-width) var(--border-primary) solid;
+
+	& button {
+		padding: 1.25rem;
+		background: transparent;
+		border: unset;
+		line-height: 0;
+		display: flex;
+		gap: 1.25rem;
+		align-items: center;
+
+		&:hover {
+			background: var(--background-hover);
+			cursor: pointer;
+		}
+
+		@media (min-width: 652px) {
+			padding-block-start: 1rem;
+			padding-block-end: 1rem;
+		}
+	}
+
+	& svg {
+		width: 20px;
+
+		@media (min-width: 652px) {
+			width: 26px;
+		}
+	}
+}
+
+.header-nav {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	padding-block-start: 2rem;
+	padding-block-end: 2rem;
+	padding-inline-start: var(--body-padding-inline);
+	padding-inline-end: var(--body-padding-inline);
+	background: var(--background-secondary);
+	border-block-start: var(--border-width) var(--border-primary) solid;
+	border-block-end: var(--border-width) var(--border-primary) solid;
+	text-align: center;
+}
+
+.lg-nav {
+	width: 100%;
+	padding-block-start: 3rem;
+	padding-block-end: 1.5rem;
+	padding-inline-start: var(--body-padding-inline);
+	padding-inline-end: var(--body-padding-inline);
+}
+.article-card {
+	position: relative;
+	border: var(--border-width) var(--border-secondary) solid;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	& a {
+		block-size: 100%;
+		color: transparent;
+		inline-size: 100%;
+		position: absolute;
+	}
+
+	& .article-card__top {
+		padding-inline-start: 1rem;
+		padding-inline-end: 1rem;
+		padding-block-start: 1rem;
+		padding-block-end: 0.75rem;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		gap: 0.75rem;
+
+		@media (min-width: 652px) {
+			padding-block-start: 1.25rem;
+			padding-block-end: 1.25rem;
+		}
+	}
+
+	& h3 {
+		color: var(--display-link);
+	}
+
+	&:hover h3 {
+		text-decoration: underline;
+	}
+
+	& .article-card__bottom {
+		background-color: var(--background-secondary);
+		border-top: var(--border-width) solid var(--border-secondary);
+		display: flex;
+		padding-inline-start: 1rem;
+		padding-inline-end: 1rem;
+		padding-block-start: 0.75rem;
+		padding-block-end: 0.75rem;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (min-width: 652px) {
+			padding-block-start: 1rem;
+			padding-block-end: 1rem;
+		}
+	}
+}
+.day-counter {
+	display: flex;
+	gap: 1.25rem;
+	align-items: center;
+
+	& .callout {
+		text-align: center;
+
+		@media (min-width: 652px) {
+			text-align: right;
+		}
+
+		@media (min-width: 1260px) {
+			text-align: center;
+		}
+	}
+
+	& svg {
+		block-size: 26px;
+	}
+}
+        </style>
+        <script src="//unpkg.com/alpinejs" defer></script>
+    </head>
+    <body x-data="{open: false}" :class="open && 'nav-open'">
+        <h1 id="content-not-found" tabindex="-1">Content not found. <a class="header-anchor" href="#content-not-found">#</a></h1>
+<p>Go <a href="/">home</a>.</p>
+<!--
+
+Read more: https://www.11ty.dev/docs/quicktips/not-found/
+
+This will work for both GitHub pages and Netlify:
+
+* https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/
+* https://www.netlify.com/docs/redirects/#custom-404
+
+-->
+
+    </body>
+
+</html>

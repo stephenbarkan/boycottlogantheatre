@@ -1,0 +1,21 @@
+.day-counter {
+	display: flex;
+	gap: 1.25rem;
+	align-items: center;
+
+	& .callout {
+		text-align: center;
+
+		@media (min-width: 652px) {
+			text-align: right;
+		}
+
+		@media (min-width: 1260px) {
+			text-align: center;
+		}
+	}
+
+	& svg {
+		block-size: 26px;
+	}
+}

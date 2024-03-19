@@ -1,0 +1,81 @@
+header {
+	border-bottom: var(--border-width) var(--border-primary) solid;
+	background: var(--background-secondary);
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+	@media (min-width: 1260px) {
+		position: static;
+		border: unset;
+		background-color: unset;
+	}
+}
+
+.header-right {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+
+	@media (min-width: 652px) {
+		padding-inline-end: 1.5rem;
+		justify-content: flex-end;
+	}
+}
+
+.nav-button {
+	padding: 0.25rem;
+	border-right: var(--border-width) var(--border-primary) solid;
+
+	& button {
+		padding: 1.25rem;
+		background: transparent;
+		border: unset;
+		line-height: 0;
+		display: flex;
+		gap: 1.25rem;
+		align-items: center;
+
+		&:hover {
+			background: var(--background-hover);
+			cursor: pointer;
+		}
+
+		@media (min-width: 652px) {
+			padding-block-start: 1rem;
+			padding-block-end: 1rem;
+		}
+	}
+
+	& svg {
+		width: 20px;
+
+		@media (min-width: 652px) {
+			width: 26px;
+		}
+	}
+}
+
+.header-nav {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	padding-block-start: 2rem;
+	padding-block-end: 2rem;
+	padding-inline-start: var(--body-padding-inline);
+	padding-inline-end: var(--body-padding-inline);
+	background: var(--background-secondary);
+	border-block-start: var(--border-width) var(--border-primary) solid;
+	border-block-end: var(--border-width) var(--border-primary) solid;
+	text-align: center;
+}
+
+.lg-nav {
+	width: 100%;
+	padding-block-start: 3rem;
+	padding-block-end: 1.5rem;
+	padding-inline-start: var(--body-padding-inline);
+	padding-inline-end: var(--body-padding-inline);
+}
