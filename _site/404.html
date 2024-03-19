@@ -165,6 +165,7 @@ table {
 	--heading-lg-size: 40px;
 	--heading-base-size: 26px;
 	--callout-size: 23px;
+	--body-xl-size: 19px;
 	--body-lg-size: 19px;
 	--body-base-size: 19px;
 	--body-sm-size: 17px;
@@ -176,6 +177,7 @@ table {
 		--heading-lg-size: 70px;
 		--heading-base-size: 30px;
 		--callout-size: 32px;
+		--body-xl-size: 26px;
 		--body-lg-size: 26px;
 		--body-base-size: 23px;
 		--body-sm-size: 21px;
@@ -185,6 +187,7 @@ table {
 
 	@media (min-width: 1260px) {
 		--heading-xl-size: 88px;
+		--body-xl-size: 60px;
 		--body-lg-size: 29px;
 		--callout-size: 38px;
 	}
@@ -288,6 +291,14 @@ table {
 	color: var(--display-secondary);
 }
 
+.body-xl {
+	font-family: var(--ff-body);
+	font-weight: 400;
+	font-size: var(--body-xl-size);
+	line-height: 150%;
+	color: var(--display-secondary);
+}
+
 .body-lg {
 	font-family: var(--ff-body);
 	font-weight: 400;
@@ -338,6 +349,15 @@ table {
 	}
 	.body-sm {
 		line-height: 170%;
+	}
+}
+
+@media (min-width: 1260px) {
+	.body-xl {
+		font-family: var(--ff-display);
+		font-weight: 400;
+		line-height: 130%;
+		color: var(--display-secondary);
 	}
 }
 html {
@@ -394,7 +414,7 @@ hgroup {
 	div:has(.day-counter) {
 		border: var(--border-width) var(--border-primary) solid;
 		padding: 2rem;
-		max-width: 320px;
+		max-width: 330px;
 		position: absolute;
 		/* left: -0.5rem; */
 		right: 2rem;
@@ -497,16 +517,10 @@ section {
 	}
 
 	@media (min-width: 1260px) {
-		grid-column: 1 / -1;
-		max-width: 800px;
+		grid-column: 2 / -2;
 		margin-inline: auto;
-		padding-block-start: 5rem;
-		padding-block-end: 5rem;
-		padding-inline-start: 3.5rem;
-		padding-inline-end: 3.5rem;
-		gap: 3.5rem;
-		background-color: var(--background-secondary);
-		transform: rotate(-2deg);
+		padding: unset;
+		border: unset;
 	}
 }
 
@@ -529,7 +543,7 @@ section {
 	padding-inline-start: var(--indent);
 	margin-block-start: 1.5rem;
 
-	@media (min-width: 1260px) {
+	@media (min-width: 1261px) {
 		display: grid;
 		grid-template-columns: subgrid;
 		grid-column: 1 / -1;

@@ -35,6 +35,14 @@
 	color: var(--display-secondary);
 }
 
+.body-xl {
+	font-family: var(--ff-body);
+	font-weight: 400;
+	font-size: var(--body-xl-size);
+	line-height: 150%;
+	color: var(--display-secondary);
+}
+
 .body-lg {
 	font-family: var(--ff-body);
 	font-weight: 400;
@@ -85,5 +93,14 @@
 	}
 	.body-sm {
 		line-height: 170%;
+	}
+}
+
+@media (min-width: 1260px) {
+	.body-xl {
+		font-family: var(--ff-display);
+		font-weight: 400;
+		line-height: 130%;
+		color: var(--display-secondary);
 	}
 }

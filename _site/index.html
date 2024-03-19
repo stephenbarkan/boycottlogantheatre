@@ -165,6 +165,7 @@ table {
 	--heading-lg-size: 40px;
 	--heading-base-size: 26px;
 	--callout-size: 23px;
+	--body-xl-size: 19px;
 	--body-lg-size: 19px;
 	--body-base-size: 19px;
 	--body-sm-size: 17px;
@@ -176,6 +177,7 @@ table {
 		--heading-lg-size: 70px;
 		--heading-base-size: 30px;
 		--callout-size: 32px;
+		--body-xl-size: 26px;
 		--body-lg-size: 26px;
 		--body-base-size: 23px;
 		--body-sm-size: 21px;
@@ -185,6 +187,7 @@ table {
 
 	@media (min-width: 1260px) {
 		--heading-xl-size: 88px;
+		--body-xl-size: 60px;
 		--body-lg-size: 29px;
 		--callout-size: 38px;
 	}
@@ -288,6 +291,14 @@ table {
 	color: var(--display-secondary);
 }
 
+.body-xl {
+	font-family: var(--ff-body);
+	font-weight: 400;
+	font-size: var(--body-xl-size);
+	line-height: 150%;
+	color: var(--display-secondary);
+}
+
 .body-lg {
 	font-family: var(--ff-body);
 	font-weight: 400;
@@ -338,6 +349,15 @@ table {
 	}
 	.body-sm {
 		line-height: 170%;
+	}
+}
+
+@media (min-width: 1260px) {
+	.body-xl {
+		font-family: var(--ff-display);
+		font-weight: 400;
+		line-height: 130%;
+		color: var(--display-secondary);
 	}
 }
 html {
@@ -394,7 +414,7 @@ hgroup {
 	div:has(.day-counter) {
 		border: var(--border-width) var(--border-primary) solid;
 		padding: 2rem;
-		max-width: 320px;
+		max-width: 330px;
 		position: absolute;
 		/* left: -0.5rem; */
 		right: 2rem;
@@ -497,16 +517,10 @@ section {
 	}
 
 	@media (min-width: 1260px) {
-		grid-column: 1 / -1;
-		max-width: 800px;
+		grid-column: 2 / -2;
 		margin-inline: auto;
-		padding-block-start: 5rem;
-		padding-block-end: 5rem;
-		padding-inline-start: 3.5rem;
-		padding-inline-end: 3.5rem;
-		gap: 3.5rem;
-		background-color: var(--background-secondary);
-		transform: rotate(-2deg);
+		padding: unset;
+		border: unset;
 	}
 }
 
@@ -529,7 +543,7 @@ section {
 	padding-inline-start: var(--indent);
 	margin-block-start: 1.5rem;
 
-	@media (min-width: 1260px) {
+	@media (min-width: 1261px) {
 		display: grid;
 		grid-template-columns: subgrid;
 		grid-column: 1 / -1;
@@ -786,14 +800,21 @@ header {
         </button>
     </div>
     <div class="header-right hidden-gt-lg">
-<div class="day-counter">
+<div
+    x-data="{
+        noticeDate: new Date(`11/22/2023`),
+        todaysDate: new Date()
+    }"
+    class="day-counter">
     <svg class="hidden-lt-sm hidden-gt-lg" viewBox="0 0 20 20" fill="var(--display-tertiary)" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5833 4.50004V9.87814L14.8854 12.7159L13.7841 14.3854L8.58333 10.9548V4.50004H10.5833Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5833 4.50004V9.87814L14.8854 12.7159L13.7841 14.3854L8.58333 10.9548V4.50004H10.5833Z"/>
     </svg>
-    <p class="callout">81 days since <span class="hidden-lt-sm">the</span> eviction notice</p>
+    <p class="callout">
+        <span x-text="Math.round((todaysDate.getTime() - noticeDate.getTime()) / 86400000)"></span>
+        days since <span class="hidden-lt-sm">the</span> eviction notice</p>
 </div>
 </div>
     <div
@@ -820,14 +841,21 @@ header {
         <h1 class="heading-xl">Boycott the Logan Theatre!</h1>
         <p class="body-lg">We demand M. Fishman & Co. drop the unjust eviction against our neighbor, Manal Farhan.</p>
         <div class="hidden-lt-lg">
-<div class="day-counter">
+<div
+    x-data="{
+        noticeDate: new Date(`11/22/2023`),
+        todaysDate: new Date()
+    }"
+    class="day-counter">
     <svg class="hidden-lt-sm hidden-gt-lg" viewBox="0 0 20 20" fill="var(--display-tertiary)" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5833 4.50004V9.87814L14.8854 12.7159L13.7841 14.3854L8.58333 10.9548V4.50004H10.5833Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5833 4.50004V9.87814L14.8854 12.7159L13.7841 14.3854L8.58333 10.9548V4.50004H10.5833Z"/>
     </svg>
-    <p class="callout">81 days since <span class="hidden-lt-sm">the</span> eviction notice</p>
+    <p class="callout">
+        <span x-text="Math.round((todaysDate.getTime() - noticeDate.getTime()) / 86400000)"></span>
+        days since <span class="hidden-lt-sm">the</span> eviction notice</p>
 </div>
 </div>
     </hgroup>
@@ -835,7 +863,7 @@ header {
     <section id="whats-the-story" class="content-section">
         <h2 class="heading-base">The story</h2>
         <div class="paragraphs body-base">
-            <p>In an act of anti-Palestinian racism, owner of The Logan Theatre and long-time enemy of the neighborhood, landlord Mark Fishman, filed an eviction against his tenant for flying a Palestinian flag from her window over Milwaukee Avenue.</p>
+            <p>November 2023 – In an act of anti-Palestinian racism, owner of The Logan Theatre and long-time enemy of the neighborhood, landlord Mark Fishman, filed an eviction against his tenant for flying a Palestinian flag from her window over Milwaukee Avenue.</p>
         </div>
     </section>
     <section id="who-we-are" class="content-section">
@@ -868,8 +896,8 @@ header {
         </div>
     </section>
     <section id="call-to-action">
-        <h2 class="heading-lg">Boycott!</h2>
-        <p class="body-lg">In recognition of the power of our local choices, we call on our neighbors to join us in the ongoing boycott of The Logan Theatre.</p>
+        <h2 class="heading-lg hidden-gt-lg">Boycott!</h2>
+        <p class="body-xl">We call on our neighbors to join us in the ongoing boycott of The Logan Theatre in recognition of the power of our local choices.</p>
     </section>
     
     <section id="fishman-in-the-media" class="content-section">
