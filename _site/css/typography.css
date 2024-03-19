@@ -1,5 +1,19 @@
+@font-face {
+	font-family: "Arial Narrow";
+	src: url("/fonts/ArialNarrow.ttf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Arial Narrow";
+	src: url("/fonts/ArialNarrow.ttf");
+	font-weight: 400;
+}
+
 /* type sizes */
 :root {
+	--ff-display: "Arial Narrow";
+	--ff-body: "Arial";
+
 	--heading-xl-size: 46px;
 	--heading-lg-size: 40px;
 	--heading-base-size: 26px;

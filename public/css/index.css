@@ -12,9 +12,6 @@
 	--display-tertiary: #76726d;
 	--display-quaternary: #a6a4a2;
 	--display-link: #2f2fba;
-
-	--ff-display: "Arial Narrow";
-	--ff-body: "Arial";
 }
 
 /* borders */
@@ -46,6 +43,7 @@
 		--section-spacing: 9rem;
 		--indent: 0rem;
 		--content-section-gap: 2.5rem;
+		--section-scroll-padding: 4rem;
 	}
 }
 
