@@ -1,6 +1,13 @@
 module.exports = [
 	{
 		title:
+			"Logan Theatre employee who leaked information to BOYCOTT speaks out",
+		link: "https://loganslooselips.wordpress.com/2024/03/20/logan-theatre-employee-who-leaked-information-to-boycott-speaks-out/",
+		source: "Logan’s Loose Lips",
+		date: "March 20, 2024",
+	},
+	{
+		title:
 			"Prominent Logan Square landlord threatens to sue city over zoning change and gets his way—again",
 		link: "https://blockclubchicago.org/2020/12/03/prominent-logan-square-landlord-threatens-to-sue-city-over-zoning-change-and-gets-his-way-again/",
 		source: "Block Club Chicago",
